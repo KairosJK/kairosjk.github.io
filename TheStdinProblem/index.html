@@ -35,7 +35,7 @@
     <div class="container"><header>
   <div class="menu">
     <div class="innerMenu">
-      <p><b>kairos@net:~</b></p>
+      <p><b>λ kairos@net:~</b></p>
       <ul><li><a href="/">/home</a></li><li><a href="/archive">/archive</a></li><li><a href="/socials">/socials</a></li><li><a href="/about">/about</a></li></ul>
     </div>
   </div>
@@ -66,7 +66,7 @@ Reading Time: approx. 2 min.</p>
     <span class="p">}</span></code></pre></figure>
 
 <p><br />
-Now this solution may not be the most elegant or quickest, but when devloping it I made it easy to read, and cover my cases. It simply initializes a char variable, called <code class="language-plaintext highlighter-rouge">currentChar</code>, and uses it as an ittorator to clean the overflowed characters from the function that read stdin before (whether it be <code class="language-plaintext highlighter-rouge">scanf</code>, or <code class="language-plaintext highlighter-rouge">fgets</code>). It grabs the current value from stdin with <code class="language-plaintext highlighter-rouge">fgetc(stdin);</code> and immediately checks if it is equal to a newline (which would be the user hitting “enter”), or <code class="language-plaintext highlighter-rouge">EOF</code>, a standard library macro which indicates an <code class="language-plaintext highlighter-rouge">END OF FILE</code> for the stream. If it passes either of these 2 cases, it breaks from the loop and ends the function. This function successfully flushes the stdin stream and allows for new clean inputs.</p>
+Now this solution may not be the most elegant or quickest, but when developing it I made it easy to read, and cover my cases. It simply initializes a char variable, called <code class="language-plaintext highlighter-rouge">currentChar</code>, and uses it as an ittorator to clean the overflowed characters from the function that read stdin before (whether it be <code class="language-plaintext highlighter-rouge">scanf</code>, or <code class="language-plaintext highlighter-rouge">fgets</code>). It grabs the current value from stdin with <code class="language-plaintext highlighter-rouge">fgetc(stdin);</code> and immediately checks if it is equal to a newline (which would be the user hitting “enter”), or <code class="language-plaintext highlighter-rouge">EOF</code>, a standard library macro which indicates an <code class="language-plaintext highlighter-rouge">END OF FILE</code> for the stream. If it passes either of these 2 cases, it breaks from the loop and ends the function. This function successfully flushes the stdin stream and allows for new clean inputs.</p>
 
 
     </main><footer>
